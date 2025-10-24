@@ -21,7 +21,7 @@ HTML = '''
 <title>Typing Speed Game</title>
 <style>
 body{font-family:Arial;text-align:center;background:#f0f0f0;margin:0;padding:20px;}
-#word{font-size:2em;margin:20px;color:#333;}
+#word{font-size:2em;margin:20px;color:#eee;}
 input{font-size:1.2em;padding:12px;width:60%;}
 button{padding:10px 20px;font-size:1em;}
 #result{margin-top:20px;font-size:1.2em;}
@@ -33,6 +33,7 @@ body {
     text-align: center;
     margin: 0;
     transition: background 0.3s, color 0.3s;
+    position: relative;
 }
 
 body.light-mode {
@@ -62,25 +63,45 @@ input[type=text], button {
     background-color: #222;
     color: #eee;
     border: none;
-    border-radius: 100px;
+    border-radius: 10px;
 }
+
+body.light-mode #word {
+color: #111;
+
+}
+
+
+
 
 body.light-mode .level-button, 
 body.light-mode select {
-    background-color: #eee;
-    color: #111;
+background-color: #eee;
+color: #111;
 }
 
-
-
 #target-area span {
-    color: #fff; /* Light color for visibility in dark mode */
+    color: #fcfafa; /* Light color for visibility in dark mode */
     background-color: transparent; /* Optional: transparent background for clarity */
     border-radius: 4px; /* Optional: rounded edges for better appearance */
 }
 body.light-mode #target-area span {
     color: #111; /* Darker color for light mode */
 }
+
+h1 {
+text-align: left;
+color: #333;
+}
+
+#darkModeToggle {
+    position: absolute;
+    top: 24px;
+    right: 32px;
+    z-index: 10;
+}
+
+
 
 </style>
 </head>
@@ -112,8 +133,6 @@ window.onload = () => {
 function toggleDarkMode() {
     document.body.classList.toggle('light-mode');
 }
-
-
 
 function startGame(){
   const lvl = document.getElementById('levelSelect').value;
