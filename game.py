@@ -56,7 +56,6 @@ input[type=text], button {
     border-radius: 3px;
 }
 
-
 .level-button, select {
     transition: background 0.3s, color 0.3s;
     background-color: #222;
