@@ -72,8 +72,6 @@ color: #111;
 }
 
 
-
-
 body.light-mode .level-button, 
 body.light-mode select {
 background-color: #eee;
@@ -100,8 +98,6 @@ color: #333;
     right: 32px;
     z-index: 10;
 }
-
-
 
 </style>
 </head>
