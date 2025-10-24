@@ -71,8 +71,6 @@ body.light-mode select {
     color: #111;
 }
 
-
-
 #target-area span {
     color: #fff; /* Light color for visibility in dark mode */
     background-color: transparent; /* Optional: transparent background for clarity */
@@ -112,8 +110,6 @@ window.onload = () => {
 function toggleDarkMode() {
     document.body.classList.toggle('light-mode');
 }
-
-
 
 function startGame(){
   const lvl = document.getElementById('levelSelect').value;
