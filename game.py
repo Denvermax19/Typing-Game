@@ -87,7 +87,7 @@ body.light-mode #target-area span {
 <body>
 <h1>Typing Speed Game</h1>
 
-<button id="darkModeToggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+<button id="darkModeToggle" onclick="toggleDarkMode()">☾☼ Dark Mode</button>
 
 <p>Select Level: <select id="levelSelect"></select> 
 <button onclick="startGame()">Start</button></p>
